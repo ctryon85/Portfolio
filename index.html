@@ -3,22 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <linkel rel="stylesheet" href="styles.css">
-    <title>Portfoliot</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is a simple portfolio page.</p> 
-    <nav>
-        <ul>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Contact</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="skills.html">Resume</a></li>
-            <li><a href="services.html">Testimonials</a></li>
-        </ul>
+
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">My Portfolio</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <section class="hero">
+            <h1>Hello, I'm Christian</h1>
+            <p>Welcome to my portfolio! I'm a Software Engineering Student passionate about building and learning new things.</p>
+        </section>
+    </main>
+
+    
     <script src="script.js"></script>
 </body>
 </html>
