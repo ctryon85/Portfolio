@@ -1,3 +1,9 @@
+
+/* Contact page form button hover */
+.contact-section button[type="submit"]:hover {
+	background: #1b4f9c !important;
+	box-shadow: 0 2px 8px rgba(44,108,223,0.10);
+}
 /* Flex row for side-by-side containers */
 .flex-row {
 	display: flex;
