@@ -4,87 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>About</title>
+    <title>about</title>
 </head>
 <body>
-    <!-- Nav tabs -->
-    <ul
-        class="nav nav-tabs"
-        id="navId"
-        role="tablist"
-    >
-        <li class="nav-item">
-            <a
-                href="#tab1Id"
-                class="nav-link active"
-                data-bs-toggle="tab"
-                aria-current="page"
-                >Active</a
-            >
-        </li>
-        <li class="nav-item dropdown">
-            <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Dropdown</a
-            >
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#tab2Id">Action</a>
-                <a class="dropdown-item" href="#tab3Id">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#tab4Id">Action</a>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">My Portfolio</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+    <section class="about-section">
+        <div class="container section-container">
+            <div class="section-inner">
+                <h1>About Me</h1>
+                <p>Hello! I'm Christian, a Software Engineering Student passionate about building and learning new things. This portfolio showcases my projects, blog posts, and services I offer.</p>
+                <h2>My Journey</h2>
+                <p>I started my journey in software engineering because of my fascination with technology and problem-solving. Over the years, I've worked on various projects that have helped me hone my skills and expand my knowledge.</p>
+                <h2>Skills & Technologies</h2>
+                <ul>
+                    <li>Programming Languages: JavaScript, Python, Java, C++</li>
+                    <li>Web Development: HTML, CSS, React, Node.js</li>
+                    <li>Databases: MySQL, MongoDB</li>
+                    <li>Tools: Git, Docker, AWS</li>
+                </ul>
+                <h2>Contact Me</h2>
+                <p>If you'd like to get in touch, feel free to reach out via the <a href="contact.html">contact page</a>. I'm always open to discussing new projects or opportunities!</p>
             </div>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a href="#tab5Id" class="nav-link" data-bs-toggle="tab"
-                >Another link</a
-            >
-        </li>
-        <li class="nav-item" role="presentation">
-            <a href="#" class="nav-link disabled" data-bs-toggle="tab"
-                >Disabled</a
-            >
-        </li>
-    </ul>
-    
-    <!-- Tab panes -->
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
-            <h3>Welcome to the About Page!</h3>
-            <p>This is the content for the first tab. You can add your bio, background, or any information here.</p>
         </div>
-        <div class="tab-pane fade" id="tab2Id" role="tabpanel">
-            <h3>Action Tab</h3>
-            <p>This is the content for the Action tab. Add details about your skills, experience, or anything else.</p>
-        </div>
-        <div class="tab-pane fade" id="tab3Id" role="tabpanel">
-            <h3>Another Action</h3>
-            <p>This is the content for the Another Action tab. You can put more information here.</p>
-        </div>
-        <div class="tab-pane fade" id="tab4Id" role="tabpanel">
-            <h3>Action Tab 2</h3>
-            <p>This is the content for the second Action tab. Add more details as needed.</p>
-        </div>
-        <div class="tab-pane fade" id="tab5Id" role="tabpanel">
-            <h3>Another Link</h3>
-            <p>This is the content for the Another Link tab. Add any other information you want to share.</p>
-        </div>
-    </div>
-    
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        var triggerEl = document.querySelector("#navId a");
-        if (triggerEl) {
-            bootstrap.Tab.getOrCreateInstance(triggerEl).show(); // Select tab by name
-        }
-    </script>
     
 </body>
 </html>
