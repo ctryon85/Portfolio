@@ -1,3 +1,28 @@
+/* Flex row for side-by-side containers */
+.flex-row {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-bottom: 2.5rem;
+}
+.calculator, .rps-game {
+	flex: 1 1 320px;
+	max-width: 400px;
+	min-width: 280px;
+}
+
+@media (max-width: 900px) {
+	.flex-row {
+		flex-direction: column;
+		align-items: center;
+	}
+	.calculator, .rps-game {
+		max-width: 98vw;
+		min-width: unset;
+	}
+}
 
 /* Reset and base styles */
 * {
@@ -258,3 +283,70 @@ body {
 }
 
 /* End calculator */
+/* Rock Paper Scissors Game */
+.rock-paper-scissors {
+	max-width: 400px;		
+	margin: 3rem auto;
+	padding: 2rem 1.5rem 1.5rem 1.5rem;
+	border: 1.5px solid #e0e4ea;
+	border-radius: 16px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(44, 108, 223, 0.06);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.rock-paper-scissors h2 {
+	margin-bottom: 1rem;		
+	font-size: 1.8rem;
+	color: #222;
+}
+.rps-buttons {
+	display: flex;
+	gap: 1rem;			
+	margin-bottom: 1.5rem;
+}
+.rps-buttons button {	
+	padding: 0.75rem 1.5rem;
+	background: #2d6cdf;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+	font-size: 1.1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background 0.2s, box-shadow 0.2s;
+	box-shadow: 0 1px 3px rgba(44,108,223,0.06);
+	outline: none;
+}
+.rps-buttons button:hover {
+	background: #1b4f9c;
+	box-shadow: 0 2px 8px rgba(44,108,223,0.10);
+}				
+.rps-buttons button:active {
+	background: #17407a;
+}
+.rps-result {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #333;		
+	min-height: 1.5em;
+	text-align: center;
+}
+@media (max-width: 500px) {
+	.rock-paper-scissors {
+		max-width: 98vw;
+		padding: 1rem 0.2rem;			
+		border-radius: 10px;
+	}
+	.rps-buttons {
+		flex-direction: column;
+		width: 100%;
+	}
+	.rps-buttons button {	
+		width: 100%;
+		font-size: 1rem;
+		border-radius: 6px;
+	}
+}	
+/* End Rock Paper Scissors Game */
